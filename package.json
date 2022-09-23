@@ -2,7 +2,7 @@
   "name": "Holly",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "default": "index.html",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "hover-effect": "^1.1.0",
@@ -12,6 +12,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "build": "parcel build ./index.html",
     "dev": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
