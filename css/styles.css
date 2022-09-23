@@ -63,7 +63,7 @@
 }
 #section_1 {
   min-height: 100vh;
-  background: url(../img/fondo.png);
+  background: url("https://ik.imagekit.io/ro48hkvo8/fondo_SFrBepL5J.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663974535238");
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
@@ -161,7 +161,7 @@
 .img_section2 {
   height: 450px;
   transition: 0.5s ease-in-out;
-  background: url(../img/bentleycolor.png);
+  background: url("https://ik.imagekit.io/ro48hkvo8/bentleycolor_k6lP9vSUr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663974535394");
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -775,7 +775,7 @@ article .work--brand {
   color: #DBDBDB;
 }
 article .mercedes-gtc_work {
-  background: url(../img/mercedes_amg_gtc.png);
+  background: url("https://ik.imagekit.io/ro48hkvo8/amg_gtc_rB2bZCF2dS.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663974534294");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -787,7 +787,7 @@ article .mercedes-gtc_work {
   }
 }
 article .work-header--img {
-  background: url(../img/supraGR.png);
+  background: url("https://ik.imagekit.io/ro48hkvo8/supraGR_f4dwNUPSr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663974535009");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -811,7 +811,7 @@ article .mclaren_img {
   }
 }
 article .ducati-panigale_img {
-  background: url(../img/ducatiPanigale_1.png);
+  background: url("https://ik.imagekit.io/ro48hkvo8/ducatiPanigale_1_PqChG8gxc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663974535105");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
