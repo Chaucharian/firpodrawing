@@ -20,6 +20,9 @@ jobs:
           paths:
             - ./node_modules
       - run:
+          name: clean up
+          command: rm -rf ./dist
+      - run:
           name: Build React App
           command: npm run build
       - save_cache:
