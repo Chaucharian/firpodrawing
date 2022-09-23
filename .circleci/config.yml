@@ -45,7 +45,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            rsync -htavzr -e 'ssh' ./out $SSH_USER@$SSH_HOST:/home/firpodrawings
+            rsync -htavzr -e 'ssh' ./dist $SSH_USER@$SSH_HOST:/home/firpodrawings
           no_output_timeout: 30m
 
 workflows:
@@ -64,4 +64,3 @@ workflows:
           filters:
             branches:
               only: main # only deploy on the main branch
-
