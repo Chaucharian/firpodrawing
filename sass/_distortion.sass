@@ -1,0 +1,321 @@
+// .distortion
+//     width: 50%
+//     height: 100vh
+    
+//     &:hover
+//         cursor: pointer
+   
+html 
+    overflow-x: hidden
+
+body::-webkit-scrollbar 
+    width: 2px
+
+ 
+body::-webkit-scrollbar-track 
+    -webkit-box-shadow: inset 10px 10px 6px #000000
+
+
+body::-webkit-scrollbar-thumb 
+    background-color: #ff0000
+    outline: 1px solid #ff0000
+
+body
+    cursor: default
+    overflow: hidden
+    
+// .smooth-scroll-wrapper
+//     position: fixed
+//     z-index: 2
+//     top: 0
+//     left: 0
+//     overflow: hidden
+.top-title
+    h1
+        font-family: Akira
+        transition: 0.6s ease
+        line-height: 30px
+        color: #ffffff
+        position: relative
+        z-index: 4
+        mix-blend-mode: difference
+        
+
+    h2
+        font-family: Empty
+        // transition: 0.6s ease
+        line-height: 30px
+        color: #000000
+        position: relative
+        z-index: 2
+        font-size: 2em
+    h3
+        font-family: Akira
+        // transition: 0.6s ease
+        line-height: 30px
+        color: #ffffff
+        position: relative
+        z-index: 4
+        mix-blend-mode: difference
+        font-size: 5rem
+        white-space: nowrap
+        
+        // animation: sideTextMove 10s infinite alternate
+        
+
+    .distortion
+        position: relative
+        z-index: 7
+    .explore_box
+        width: 20%
+        height: 2px
+        background-color: #ff0000
+        position: relative
+        bottom: 38px
+        mix-blend-mode: difference
+        z-index: 6
+    .fd-txt
+        font-size: 9rem
+        font-family: Empty
+        // transition: 0.6s ease
+        line-height: 30px
+        position: relative
+        z-index: 8
+        top: 230px
+        color: #00ff4c
+        // animation: sideTextMove 5s infinite alternate
+        opacity: 0.4
+
+
+
+        @keyframes sideTextMove
+            from 
+                transform: translateX(-100px)
+
+            to
+                transform: translateX(-200px)
+                
+        // &:hover
+        //     font-family: Fill
+        //     transition: 20s ease
+        //     line-height: 35px
+        //     color: #000000
+
+.box-container
+    position: relative
+    z-index: 3
+    
+    .red-box
+        height: 250px
+        width: 130px
+        border: 3px solid #ff0000
+        position: relative
+    .box-2
+        
+        z-index: 1
+    .box-1
+        top: 250px
+        z-index: 2
+    .box-3
+        bottom: 250px
+        z-index: 3
+
+
+    
+
+
+///////////// CUSTOM CURSOR //////////////////////
+
+
+
+
+
+
+.cursor
+    width: 15px
+    height: 15px
+    border: 1px solid #000000
+    border-radius: 50%
+    position: absolute
+    transition-duration: 100ms
+    transition-timing-function: ease-out
+    animation: cursorAnim .9s infinite alternate
+    z-index: 400
+    @media screen and ( max-width: 768px )
+        display: none
+
+        
+
+
+.cursor::after
+    content: ''
+    width: 18px
+    height: 18px
+    top: -2.6px
+    left: -2.6px
+    border-radius: 50%
+    border: 0.5px solid #ff0000
+    animation: cursorAnim2 .9s infinite alternate
+    opacity: 0.7
+    position: absolute
+
+.expand
+    animation: cursorAnim3 .9s forwards
+    border: 1px solid #ff000060
+
+@keyframes cursorAnim
+    from 
+        transform: scale(1)
+
+    to
+        transform: scale(.8)
+
+@keyframes cursorAnim2
+    from 
+        transform: scale(1.1)
+
+    to
+        transform: scale(.7)
+
+@keyframes cursorAnim3
+    0% 
+        transform: scale(1)
+
+    50%
+        transform: scale(3)
+    100%
+        transform: scale(1)
+        opacity: 0
+
+
+
+
+section
+    overflow: hidden
+
+.resp-div
+    display: flex
+    justify-content: center
+    align-content: center
+    flex-wrap: wrap
+
+.resp-div-st
+    display: flex
+    justify-content: start
+    align-content: center
+    flex: wrap
+
+.resp-div-acst
+    display: flex
+    justify-content: center
+    align-items: start
+    flex: wrap
+
+
+// .works-img img
+//     transition: 1s
+// .works-menu a
+//     font-size: 40px
+//     text-decoration: none
+//     color: #000000
+//     font-weight: 900
+//     transition: transform 0.3s ease-in-out
+//     text-transform: uppercase
+//     line-height: 40px
+//     &:hover
+//         text-decoration: none
+//         color: #000000
+//         transform: scale(1.1)
+
+/////////// 3D GALLERY ////////////
+
+html, body 
+    position: relative
+    height: 100%
+    background-color: #000000
+.swiper-slide
+    background-size: 100%
+    background-position: center
+    background-repeat: no-repeat
+    box-sizing: border-box
+    padding: 8em 3em
+    color: #000000
+  
+
+    
+        
+.swiper-container
+    height: 100vh
+    width: 100%
+    position: absolute
+    @media screen and ( max-width:768px  )
+        height: 50%
+    h1
+        font-family: Akira
+        transition: 0.6s ease
+        line-height: 20px
+        mix-blend-mode: difference
+        
+    
+.slide1
+    background: url('../img/488.jpg')
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: center
+    @media screen and ( max-width: 768px  )
+        background-size: 100%
+        background-repeat: no-repeat
+        
+.slide2
+    background: url('../img/audiHD.jpg')
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: center
+    @media screen and ( max-width: 768px  )
+        background-size: 100%
+        background-repeat: no-repeat
+.slide3
+    background: url('../img/audiRS6.png')
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: center
+    @media screen and ( max-width: 768px  )
+        background-size: 100%
+        background-repeat: no-repeat
+
+
+.distortion, .distortion2, .distortion3
+    position: absolute
+    z-index: 2
+.img-title
+    position: relative
+    z-index: 4
+    bottom: 100px
+#section2
+    position: absolute
+
+
+#works-title, #pics-title
+    background-color: #000000
+    height: 300px
+    position: relative
+    z-index: 20
+    
+    h1
+        font-family: Akira
+        transition: 0.6s ease
+        mix-blend-mode: difference
+        pointer-events: none
+        white-space: wrap 
+        line-height: 35px
+        color: #ffffff
+    h2
+        font-family: Empty
+        transition: 0.6s ease
+        line-height: 20px
+        color: #ff0000
+        // text-shadow: 0px 0px 10px #ff0000
+        font-size: 1em
+        font-size: 40px
+        &:hover
+            font-family: Fill

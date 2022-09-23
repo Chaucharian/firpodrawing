@@ -1,0 +1,348 @@
+
+/////////////// SCSS VARIABLES /////////////////////////
+
+$dark-grey: #A7A7A7
+$light-grey: #DBDBDB
+    
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////// IMPORTED SASS FILES ////////////// IMPORTED SASS FILES ///////////////////////////////////
+
+@import customCursor
+@import section_1
+@import navBar
+@import section_2
+@import section_3
+@import topNavBar
+@import spinner
+@import 3dHover
+@import main
+@import section_4
+@import section_5
+@import section_6
+@import workComponent
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//////// CUSTOM FONTS /////////////////////////// CUSTOM FONTS ////////////////////////////////////
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap')
+
+@font-face 
+    font-family: 'akira-1'
+    src: url(../fonts/Akira-Bold.otf)
+    font-style: regular
+    font-weight: 100
+
+@font-face 
+    font-family: 'cera-1'
+    src: url(../fonts/CircularStdBook.ttf)
+    font-style: regular
+    font-weight: 100
+@font-face 
+    font-family: 'cera-2'
+    src: url(../fonts/CircularStdBold.ttf)
+    font-style: regular
+    font-weight: 100
+
+@font-face 
+    font-family: 'cera-3'
+    src: url(../fonts/CeraProLight.otf)
+    font-style: regular
+    font-weight: 100
+@font-face 
+    font-family: 'cera-4'
+    src: url(../fonts/CeraProMedium.otf)
+    font-style: regular
+    font-weight: 100
+
+@font-face 
+    font-family: 'akira-2'
+    src: url(../fonts/Akira-Outline.otf)
+    font-style: regular
+    font-weight: 100
+@font-face 
+    font-family: 'akira-3'
+    src: url(../fonts/Akira-SuperBold.otf)
+    font-style: regular
+    font-weight: 100
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////// CUSTOM CLASSES /////////////////////////// CUSTOM CLASSES ////////////////////////////////////
+
+    ////////// FLEX BOX CONTAINERS ////////////////////////////////
+    ////////// ALIGN CONTENT //////////////////////////////////////
+.resp-div
+    display: flex
+    justify-content: center
+    align-content: center
+    flex-wrap: wrap
+
+.resp-end
+    display: flex
+    justify-content: center
+    align-content: center
+    flex-wrap: wrap
+
+.resp-2
+    display: flex
+    justify-content: start
+    align-content: center
+    flex-wrap: wrap
+
+.resp-3
+    display: flex
+    justify-content: center
+    align-content: start
+    flex-wrap: wrap
+
+#about-txt.resp-3
+    @media screen and ( max-width: 768px )
+        align-content: center
+        
+
+.resp-4
+    display: flex
+    justify-content: start
+    align-content: start
+    flex-wrap: wrap
+
+
+////////// FLEX BOX CONTAINERS ////////////////////////////////
+////////// ALIGN ITEMS //////////////////////////////////////
+    
+.resp-div-5
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+
+.resp-6
+    display: flex
+    justify-content: start
+    align-items: center
+    flex-wrap: wrap
+
+.resp-7
+    display: flex
+    justify-content: center
+    align-items: start
+    flex-wrap: wrap
+
+.resp-8
+    display: flex
+    justify-content: start
+    align-items: start
+    flex-wrap: wrap
+
+////////// FLEX BOX CONTAINERS ////////////////////////////////
+////////// FLEX NOWRAP //////////////////////////////////////
+    
+.resp-div-9
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: nowrap
+
+.resp-div-10
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: nowrap
+
+.resp-10
+    display: flex
+    justify-content: start
+    align-items: center
+    flex-wrap: nowrap
+
+.resp-11
+    display: flex
+    justify-content: center
+    align-items: start
+    flex-wrap: nowrap
+
+.resp-12
+    display: flex
+    justify-content: start
+    align-items: start
+    flex-wrap: nowrap
+    
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////// KEYFRAMES KEYFRAMES /////////////////////////// KEYFRAMES KEYFRAMES ///////////////////////// 
+
+////// MOUSE FOLLOW ////////
+
+#floatImg
+    width: 100px
+
+.float
+    opacity: 1
+    position: fixed
+    z-index: 100
+    transition: .2s
+    transition-property: opacity
+    pointer-events: none
+
+/////// GENERAL ADJUSTMENTS ///////////
+
+*, *:before, *:after 
+    box-sizing: border-box
+*
+    padding: 0
+    margin: 0
+//////// HEADER ////////////
+html 
+    overflow-x: hidden
+
+
+html,
+body 
+    margin: 0
+    padding: 0
+    
+    color: #fff
+    font-family: "akira-1"
+    
+    
+
+body 
+    overflow: hidden
+    width: 100%
+    user-select: none
+    background: #161616
+    
+    
+
+    
+    
+    
+// .cursor 
+   
+//     position: fixed
+//     z-index: 1000
+//     padding: 0.3rem
+//     background-color: #fff
+//     border-radius: 50%
+//     mix-blend-mode: difference
+//     transition: transform 0.7s ease
+
+
+
+// .hover-this:hover ~ .cursor 
+//     transform: translate(-50%, -50%) scale(8)
+
+
+// @media(min-width: 900px) 
+//     nav 
+//         display: flex
+//         justify-content: space-around
+      
+
+
+// @media(max-width: 900px) 
+//     nav 
+//         top: 30%
+      
+
+//     .hover-this 
+//         width: 100%
+//         padding: 20px 0
+//         display: inline-block
+      
+
+
+
+///////////////////// SMOOTH SCROLL EFFECT ////////////////////
+
+// .smooth-scroll-wrapper 
+//     position: fixed
+//     z-index: 10
+//     overflow: hidden
+//     top: 0
+//     left: 0
+//     width: 100%
+
+////////////////////////////////////      CUSTOM SCROLL BAR     ////////////////////////////////////////////
+
+
+body::-webkit-scrollbar 
+    width: 3px
+
+ 
+body::-webkit-scrollbar-track 
+    -webkit-box-shadow: inset 10px 10px 6px #000000
+
+ 
+body::-webkit-scrollbar-thumb 
+    background-color: #ff0000
+    outline: 1px solid #ff0000
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 
+
+.svg-container
+    position: relative
+    overflow: hidden
+    width: 70%
+    top: 400px
+
+/////// EJEMPLO DEL CIRCULO ///////////
+
+.text-circle
+    position: fixed
+    z-index: 3
+    top: 90vh
+    left: 95vw
+    width: 40px
+    mix-blend-mode: normal
+    
+    img
+        width: 40px
+
+///////////////////////////////////
+/////////   RED LINE    //////////
+.red-line
+    width: 1px
+    background: #ff0000
+    
+
+//////// LOADER ANIMATION ////////////
+
+
+
+        
+
+//////// BLIND TITLE ANIMATION //////////////////////
+#home_Title
+    margin-top: 200px
+
+// .title
+    
+//     margin-left: 30px
+//     position: relative
+//     mix-blend-mode: difference
+
+//     span
+//         color: #ffffff
+//         font-family: 'akira-3'
+//         display: block
+//     .slogan
+//         font-family: 'akira-2'
+// span:after
+//     content: ""
+//     position: absolute
+//     left: 0
+//     width: 100%
+//     height: 100%
+//     z-index: 1
+//     transform-origin: 100% 0
+//     background: #000000
+    
+    
+/////////////////////////////////////////////////////////////////
+        
+ 

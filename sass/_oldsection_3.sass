@@ -1,0 +1,267 @@
+#hiperrealistic_carousel
+    background: linear-gradient(217deg, #ff0000, #421515ad 70.71%),linear-gradient(127deg, #000000, #000000 70.71%),linear-gradient(336deg, #630505, #ffffff81 70.71%)
+    position: absolute
+    z-index: 2
+
+    p
+        white-space: nowrap
+        font-family: 'akira-2'
+        mix-blend-mode: overlay
+        font-size: 70px
+        text-align: center
+        color: #ffffff
+        position: relative
+        top: 10px
+    span
+        font-family: 'akira-3'
+        mix-blend-mode: overlay
+
+#background_letter_carousel
+    
+    position: absolute
+    z-index: 1
+    bottom: -70px
+    p
+        white-space: nowrap
+        font-family: 'akira-2'
+        font-size: 130px
+        text-align: center
+        color: #47474748
+        position: relative
+        top: 10px
+    span
+        font-family: 'akira-3'
+
+////////////// COLLAGE STYLES /////////////////////import css-variables from 
+
+#collage__container
+    position: relative
+    top: 120px
+    background-color: #ff0000
+    
+
+    #profile_image
+        background-image: url(../img/me.png)
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+
+        height: 100vh
+
+    #right_collage
+        height: 100vh
+
+    #collage_text
+        background-image: url(../img/gradient_bg_1.png)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        height: 100%
+        position: relative
+        
+
+        @media screen and ( max-width: 768px  )
+            height: 50%
+            
+        
+
+        p
+            font-family: 'akira-1'
+            font-size: 70px
+            color: #ffffff
+            mix-blend-mode: overlay
+            line-height: 50px
+            position: relative
+            @media screen and ( max-width: 768px  )
+            height: 50%
+            
+            span
+                font-family: 'akira-2'
+            .wide
+                font-family: 'akira-3'
+    #inner_collage
+        position: relative
+        
+        height: 100%
+        #collage_img__1
+            background-image: url(../img/lapices.png)
+            background-size: cover
+            background-repeat: no-repeat
+            background-position: center
+
+            height: 55%
+
+            @media screen and ( max-width: 768px  )
+                height: 50%
+
+        #collage_img__2
+            background-image: url(../img/fordbw.png)
+            background-size: cover
+            background-repeat: no-repeat
+            background-position: center
+
+            height: 45%
+
+            @media screen and ( max-width: 768px  )
+                height: 50%
+
+
+
+#lastest_works_container
+    background: #111111
+    display: flex
+    position: relative
+    min-height: 100vh
+
+   
+
+.latest__work_img
+    filter: grayscale(100%)
+    transition: filter 0.3s ease-in
+    &:hover
+        filter: grayscale(0%)
+        cursor: pointer
+
+
+
+
+#latest_works_img1
+    background: url(../img/s2000.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    
+    height: 400px
+    @media screen and ( max-width: 768px)
+        height: 300px
+
+#latest_works_img4
+    background: url(../img/ttrs.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+    height: 400px
+    @media screen and ( max-width: 768px)
+        height: 300px
+
+#latest_works_img3
+    background: url(../img/lambo.png)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+  
+    height: 400px
+    @media screen and ( max-width: 768px)
+        height: 300px
+
+#latest_works_img2
+    background: url(../img/supraGR.png)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100%
+  
+    height: 400px
+    @media screen and ( max-width: 768px)
+        height: 300px
+
+#latest_works_img5
+    background: url(../img/supraGR_1.png)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100%
+  
+    height: 400px
+    @media screen and ( max-width: 768px)
+        height: 300px
+
+#latest_works_img6
+    background: url(../img/GT3.png)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+  
+    height: 400px
+    @media screen and ( max-width: 768px)
+        height: 300px
+
+
+
+
+
+#latestW_redline__1, #latestW_redline__2, #latestW_redline__3
+    height: 200px
+    position: relative
+    border-radius: 25%
+#latestW_redline__1
+    bottom: 100px
+
+#latestW_redline__2, #latestW_redline__3
+    transform: rotate(90deg)
+#latestW_redline__2
+    top: 125.1px
+    right: 35%
+    z-index: 4
+#latestW_redline__3
+    bottom: 125.1px
+    left: 35%
+    z-index: 3
+#latest_works_title__container
+    height: 75vh
+    position: relative
+    // @media screen and ( max-width: 768px  )
+    //     height: 100vh
+
+.latest_works__ttl
+    position: relative
+    z-index: 2
+// .latest_works_ttl1:after
+    
+//     content: ''
+//     position: absolute
+//     left: 0
+//     width: 100%
+//     height: 100%
+//     background: #111111
+//     z-index: 1
+//     transform-origin: 100% 0
+
+.latest_work_component
+    transition: 0.9s ease-in
+.latest_work_component[data-emergence=hidden] 
+    opacity: 0
+    top: 40px
+    
+
+.latest_work_component[data-emergence=visible] 
+    opacity: 1
+    top: 0px
+
+
+.latest_works_ttl1, .latest_works_ttl2
+    color: #ffffff
+    
+    
+.latest_works_ttl1
+    font-family: 'akira-3'
+.latest_works_ttl2
+    font-family: 'akira-2'
+    position: relative
+
+      
+.work_brand
+    overflow: hidden
+    h3
+        color: #ffffff
+        font-family: 'cera-2'
+        font-weight: 300
+        font-size: 16px
+        white-space: nowrap
+    p
+        color: #ffffffc2
+        font-family: 'cera-1'
+        font-weight: 300
+        font-size: 12px
+
+
+    

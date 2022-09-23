@@ -1,0 +1,61 @@
+#section_3
+    min-height: 100vh
+    width: 100%
+    background-color: #1E1E1E
+    
+.slider_p_container
+    height: 100%
+    position: relative
+.slider-paragraph
+    
+    white-space: nowrap
+    font-size: 100px
+    color: #ffffff
+    font-family: 'akira-3'
+    position: relative
+    @media screen and ( max-width: 768px)
+        font-size: 42px
+        transition: 1s ease-in-out
+        
+
+    .fChar
+        font-family: 'akira-2'
+#slider_p2
+    bottom: 270px
+    right: 600px
+    z-index: 3
+    @media screen and ( max-width: 768px)
+        right: 0px
+        top: 0px
+        font-family: 'akira-2'
+
+
+#slider_p1
+    top: 200px
+    right: 100px
+    z-index: 1
+    @media screen and ( max-width: 768px)
+        right: 0px
+        top: 30px
+        bottom: 0px
+
+        
+
+
+.profileImage
+    position: absolute
+    z-index: 2
+    top: 100px
+
+#sworks_MOBILE
+    height: 100vh
+    p
+        color: #ffffff
+        font-family: 'cera-3'
+
+.slider-paragraph[data-emergence=hidden] 
+    opacity: 0
+    top: 20px
+.slider-paragraph[data-emergence=visible] 
+    opacity: 1
+    top: 0px

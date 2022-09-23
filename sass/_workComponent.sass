@@ -1,0 +1,89 @@
+
+article
+    min-height: 100vh
+    @media screen and ( max-width: 768px  )
+        min-height: 08vh
+
+    margin: 0
+    padding: 0
+    padding-top: 10px
+    padding-bottom: 10px
+        
+    .work--model , .work--brand
+        font-family: 'akira-3'
+        margin: 0
+        padding: 0
+        font-size: 44px
+    .work--number
+        font-family: 'akira-1'
+        font-size: 25px
+        color: $dark-grey
+        white-space: nowrap
+        margin-bottom: 20px
+    .work--brand
+        color: $light-grey 
+
+    // #toyota-supra_work
+    //     background: url(../img/supraGR.png)
+    
+    .mercedes-gtc_work
+        background: url(../img/mercedes_amg_gtc.png)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+
+        height: 60vh
+        @media screen and ( max-width: 768px  )
+            height: 50vh
+
+    .work-header--img
+        background: url(../img/supraGR.png)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+
+        height: 60vh
+        @media screen and ( max-width: 768px  )
+            height: 50vh
+
+    .ducati-panigale_img
+        background: url(../img/ducatiPanigale_1.png)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+
+        height: 60vh
+        @media screen and ( max-width: 768px  )
+            height: 50vh
+
+
+    .work-fl_paragraph
+        font-size: 23px
+        font-family: 'cera-4'
+
+    .work-sl_paragraph
+        font-size: 19px
+        font-family: 'cera-3'
+        bottom: 20px   
+
+    a
+        text-decoration: none
+        outline: none
+.work_epigraph
+    p
+        font-size: 15px
+//     @media screen and ( max-width: 768px  )
+//         bottom: 95px
+        
+.wk-t
+    transition: opacity 0.6s
+.wk-t[data-emergence=hidden] 
+    opacity: 0
+    
+.wk-t[data-emergence=visible] 
+    opacity: 1
+
+
+
+    
+

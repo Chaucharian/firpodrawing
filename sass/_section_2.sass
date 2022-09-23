@@ -1,0 +1,109 @@
+#section_2
+    min-height: 100vh
+    width: 100%
+    background: linear-gradient(127deg, #ff0000, #421515ad 70.71%), linear-gradient(127deg, #000000, #000000 70.71%),linear-gradient(336deg, #630505, #ffffff81 70.71%)
+    // background-color: #9E0000
+.img_section2
+    height: 450px
+    transition: 0.5s ease-in-out
+
+    background: url(../img/bentleycolor.png)
+    background-position: center
+    background-size: 100%
+    background-repeat: no-repeat
+    @media screen and ( max-width: 768px)
+        height: 300px
+
+
+.thin_line
+    height: 0.5px
+    background-color: #ffffff
+    width: 100%
+    transition: 1s ease-in-out
+    mix-blend-mode: difference
+
+.epigraph, .intro_title
+    transition: 1s ease-in-out
+.epigraph
+    font-family: 'cera-1'
+    line-height: 14px
+    
+
+.e-white
+    color: #ffffff
+    font-size: 11px
+.e-black
+    color: #000000
+    font-size: 20px
+.l-white
+    background-color: #ffffff
+.l-black
+    background-color: #000000
+
+
+#top_epigraph
+    position: relative
+    top: 20px
+
+.s2_intro
+    height: 120vh
+    @media screen and ( max-width: 768px)
+        height: 100vh
+#introLeft
+   
+    @media screen and ( max-width: 768px)
+        background-color: #2B2B2B
+    
+
+#introRight
+    h2
+        padding: 0
+        margin: 0
+        position: relative
+        font-size: 44px
+        color: #ffffff
+    #intro_title_1
+        font-family: 'akira-3'
+    #intro_title_2
+        font-family: 'akira-2'
+        bottom: 10px
+
+    p
+        font-size: 15px
+        font-family: 'cera-3'
+        color: #ffffff
+        line-height: 24px
+        font-weight: 100
+
+
+
+
+
+#img_section2[data-emergence=hidden] 
+    opacity: 0
+    
+#img_section2[data-emergence=visible] 
+    opacity: 1
+    
+
+.thin_line[data-emergence=hidden] 
+    width: 0%
+    
+.thin_line[data-emergence=visible] 
+    width: 100%
+
+.epigraph[data-emergence=hidden] 
+    opacity: 0
+    top: 10px
+    
+.epigraph[data-emergence=visible] 
+    opacity: 1
+    top: 0px
+
+.intro_title[data-emergence=hidden] 
+    opacity: 0
+    top: 10px
+    
+.intro_title[data-emergence=visible] 
+    opacity: 1
+    top: 0px
