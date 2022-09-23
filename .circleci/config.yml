@@ -44,7 +44,7 @@ jobs:
           command: "sudo apt install rsync"
       - run:
           name: List files
-          command: ls
+          command: ls -lh
       - run:
           name: Deploy Over SSH
           command: |
